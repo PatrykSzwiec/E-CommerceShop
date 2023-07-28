@@ -1,0 +1,65 @@
+@import "../../../styles/settings.scss";
+
+// .root {
+// }
+.main {
+  background-color: $button-bg;
+  color: $text-light;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  padding: 10px 30px;
+  &:not(.noHover):hover {
+    color: $text-light !important;
+    background-color: $button-primary;
+    text-decoration: none;
+  }
+
+}
+.delete {
+  text-align: center;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 1px solid;
+  color: $text-grey-light;
+  &:hover {
+    color: $button-primary;
+  }
+}
+
+.price {
+  @extend .small;
+  color: $button-price-bg !important;
+  background-color: $button-primary;
+  text-decoration: none;
+
+}
+
+.small {
+  @extend .main;
+  font-size: 13px;
+  line-height: 24px;
+  padding: 5px 10px;
+  font-weight: 400;
+}
+
+.outline {
+  display: inline-block;
+  padding: 5px 10px;
+  border: 1px solid $button-border;
+  color: $text-dark;
+  font-size: 13px;
+  line-height: 22px;
+
+  &:not(.noHover):hover {
+    background-color: $button-bg;
+    color: $text-light;
+  }
+}
+
+.active {
+  @extend .outline;
+  background-color: $button-primary;
+}
