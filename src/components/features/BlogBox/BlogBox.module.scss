@@ -10,8 +10,9 @@
         .visual {
             position: relative;
             .image {
-                height: 300px;
-                background-color: $latest-blog-gray-dark; 
+                height: 100%;
+                background-color: $latest-blog-gray-dark;
+                width: 100%; 
             }
             .subBox {
                 position: absolute;

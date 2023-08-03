@@ -1,5 +1,6 @@
 import styles from './BlogBox.module.scss';
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCalendar, faComment } from '@fortawesome/free-solid-svg-icons';
@@ -11,13 +12,13 @@ const BlogBox = () => {
 
   return (
     <div className={styles.blogs}>
-      {blogs.map(blog => (
+      {blogs.slice(0, 3).map(blog => (
         <div key={blog.id} className={styles.blog}>
           <div className={styles.visual}>
             <img
               className={styles.image}
               alt='Triathlon Guide'
-              src={`${process.env.PUBLIC_URL}/images/Blog/2.jpg`}
+              src={`${process.env.PUBLIC_URL}/images/Blog/${blog.imageName}.jpg`}
             />
             <div className={styles.subBox}>
               <div className={styles.info}>
@@ -35,9 +36,9 @@ const BlogBox = () => {
               <div className={styles.title}>{blog.blogTitle}</div>
               <div className={styles.text}>{blog.blogSummery}</div>
             </div>
-            <div className={styles.buttonBox}>
+            <Link className={styles.buttonBox} to={'/blog/' + blog.blogURL}>
               <div className={styles.button}>Read More</div>
-            </div>
+            </Link>
           </div>
         </div>
       ))}

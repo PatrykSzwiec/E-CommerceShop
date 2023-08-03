@@ -20,6 +20,7 @@ import AboutPage from './components/views/AboutPage/AboutPage';
 import PolicyPage from './components/views/PolicyPage/PolicyPage';
 import ConditionsPage from './components/views/ConditionsPage/ConditionsPage';
 import OnlineSupPage from './components/views/OnlineSupPage/OnlineSupPage';
+import SingleBlog from './components/views/SingleBlog/SingleBlog';
 
 const App = () => (
   <Provider store={store}>
@@ -32,7 +33,7 @@ const App = () => (
           <Route exact path={'/shop/:categoryId'} component={ProductList} />
           <Route exact path={'/product/:productId'} component={ProductPage} />
           <Route exact path={'/blog'} component={Blog} />
-          {/* <Route exact path={'/benefits'} component={BenefitsPage} /> */}
+          <Route exact path={'/blog/:blogURL'} component={SingleBlog} />
           <Route exact path={'/cart'} component={Cart} />
           <Route exact path={'/search'} component={SearchPage} />
           <Route exact path={'/about'} component={AboutPage} />
