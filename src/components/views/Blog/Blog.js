@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCalendar, faUser } from '@fortawesome/free-solid-svg-icons';
 import styles from './Blog.module.scss';
 import { useTranslation } from 'react-i18next';
+import BlogSidebar from '../BlogSidebar/BlogSidebar';
 
 const Blog = () => {
   const { t } = useTranslation();
@@ -38,64 +39,7 @@ const Blog = () => {
               </div>
             </div>
           </div>
-
-          <div className={styles.sidebar}>
-            <div className={styles.widget}>
-              <h2 className={styles.header}>{t('pages.blog.recentPosts')}</h2>
-              <ul>
-                <li>
-                  <a href='#'>Post 1</a>
-                </li>
-                <li>
-                  <a href='#'>Post 2</a>
-                </li>
-                <li>
-                  <a href='#'>Post 3</a>
-                </li>
-                <li>
-                  <a href='#'>Post 4</a>
-                </li>
-              </ul>
-            </div>
-
-            <div className={styles.widget}>
-              <h2 className={styles.header}>{t('pages.blog.recentComments')}</h2>
-              <ul>
-                <li>
-                  <a href='#'>Comment 1</a>
-                </li>
-                <li>
-                  <a href='#'>Comment 2</a>
-                </li>
-                <li>
-                  <a href='#'>Comment 3</a>
-                </li>
-              </ul>
-            </div>
-
-            <div className={styles.widget}>
-              <h2 className={styles.header}>{t('pages.blog.categories')}</h2>
-              <ul>
-                <li>
-                  <a href='#'>Category 1</a>
-                </li>
-                <li>
-                  <a href='#'>Category 2</a>
-                </li>
-                <li>
-                  <a href='#'>Category 3</a>
-                </li>
-              </ul>
-            </div>
-            <div className={styles.widget}>
-              <h2 className={styles.header}>{t('pages.blog.archives')}</h2>
-              <ul>
-                <li>
-                  <a href='#'>June 2023</a>
-                </li>
-              </ul>
-            </div>
-          </div>
+          <BlogSidebar />
         </div>
       </div>
     </div>

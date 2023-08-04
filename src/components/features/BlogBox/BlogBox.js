@@ -17,7 +17,7 @@ const BlogBox = () => {
           <div className={styles.visual}>
             <img
               className={styles.image}
-              alt='Triathlon Guide'
+              alt='Furniture shop'
               src={`${process.env.PUBLIC_URL}/images/Blog/${blog.imageName}.jpg`}
             />
             <div className={styles.subBox}>
