@@ -1,12 +1,6 @@
 @import "../../../styles/settings.scss";
 
 .blogs {
-    display: flex;
-    flex-direction: row;
-
-    .blog {
-        flex: 1;
-        padding: 10px;
         .visual {
             position: relative;
             .image {
@@ -70,5 +64,4 @@
                 }
             }
         }
-    }
 }

@@ -21,11 +21,13 @@ import PolicyPage from './components/views/PolicyPage/PolicyPage';
 import ConditionsPage from './components/views/ConditionsPage/ConditionsPage';
 import OnlineSupPage from './components/views/OnlineSupPage/OnlineSupPage';
 import SingleBlog from './components/views/SingleBlog/SingleBlog';
+import ScrollToTop from './components/features/ScrollToTop/ScrollToTop';
 
 const App = () => (
   <Provider store={store}>
     <BrowserRouter>
       <MainLayout>
+        <ScrollToTop />
         <Switch>
           <Route exact path={'/'} component={Homepage} />
           <Route exact path={'/login'} component={LoginPage} />

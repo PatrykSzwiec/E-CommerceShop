@@ -1,41 +1,47 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCalendar, faUser } from '@fortawesome/free-solid-svg-icons';
 import styles from './Blog.module.scss';
-import { useTranslation } from 'react-i18next';
 import BlogSidebar from '../BlogSidebar/BlogSidebar';
+import { useSelector } from 'react-redux';
+import { getBlogContent } from '../../../redux/blogRedux';
+import BlogBox from '../../features/BlogBox/BlogBox';
 
 const Blog = () => {
-  const { t } = useTranslation();
+  const blogs = useSelector(getBlogContent);
   return (
     <div className={styles.root}>
       <div className='container'>
         <div className={styles.container}>
-          <div className={styles.posts}>
-            <div className={styles.post}>
-              <h3>Post 1</h3>
-              <div className={styles.postImage}>
-                <img src='/images/Blog/bloog.jpg' alt='Obrazek posta' />
-                <div className={styles.postOverlay}>
-                  <div className={styles.postInfo}>
-                    <FontAwesomeIcon icon={faUser} />
-                    <p>Marcin</p>
-                    <FontAwesomeIcon icon={faCalendar} />
-                    <p>{t('pages.blog.addDate')}: 10-08-2023</p>
-                    <p>{t('pages.blog.lastUpdate')}: 15-08-2023</p>
-                  </div>
-                  <div className={styles.postButton}>
-                    <a href='#'>{t('pages.blog.postButtonText')}</a>
-                  </div>
-                </div>
+          <div className={styles.layout}>
+            <div className={styles.posts}>
+              <div className={styles.post}>
+                <h2>Blog</h2>
               </div>
-              <div className={styles.postContent}>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae
-                  mauris mattis, vulputate elit in, volutpat metus. Donec ullamcorper,
-                  justo ac efficitur lacinia, massa orci malesuada enim, at eleifend
-                  neque mauris id enim.
-                </p>
+            </div>
+            <div className={styles.columns}>
+              <div className={styles.blogs}>
+                {blogs.slice(0, 2).map(blog => (
+                  <div key={blog.id} className={styles.blog}>
+                    <BlogBox {...blog} />
+                  </div>
+                ))}
+              </div>
+            </div>
+            <div className={styles.columns}>
+              <div className={styles.blogs}>
+                {blogs.slice(2, 4).map(blog => (
+                  <div key={blog.id} className={styles.blog}>
+                    <BlogBox {...blog} />
+                  </div>
+                ))}
+              </div>
+            </div>
+            <div className={styles.columns}>
+              <div className={styles.blogs}>
+                {blogs.slice(4, 6).map(blog => (
+                  <div key={blog.id} className={styles.blog}>
+                    <BlogBox {...blog} />
+                  </div>
+                ))}
               </div>
             </div>
           </div>
