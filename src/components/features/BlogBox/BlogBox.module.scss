@@ -1,0 +1,67 @@
+@import "../../../styles/settings.scss";
+
+.blogs {
+        .visual {
+            position: relative;
+            .image {
+                height: 100%;
+                background-color: $latest-blog-gray-dark;
+                width: 100%; 
+            }
+            .subBox {
+                position: absolute;
+                background-color: $latest-blog-light;
+                height: 50px;
+                width: 80%;
+                bottom: -1px;
+                left: 10%;
+                display: flex;
+                flex-direction: row; 
+                .info {
+                    padding: 15px;
+                    color: $latest-blog-dark;
+                    font-size: 12px;
+                    display: flex;
+                    flex-direction: row;
+                    .icon {
+                        margin: 0 5px;
+                    }
+                }
+            }
+        }
+        .box {
+            .written {
+                display: flex;
+                flex-direction: column;
+
+                padding: 20px;
+                .title { 
+                    color: $latest-blog-main;
+                    font-size: 16px;
+                    padding: 10px 0;
+                }
+                .text {
+                    color: $latest-blog-gray-dark; 
+                    font-size: 12px;
+                    padding: 10px 0;
+                    line-height: 1.7;
+                    padding-bottom: 10px;
+                    padding-right: 10px; 
+                }
+            }
+            .buttonBox {
+                display: flex;
+                justify-content: center;
+
+                .button {
+                    height: 40px;
+                    width: 150px;  
+                    background-color: $latest-blog-main;
+                    text-align: center;
+                    color: $latest-blog-light;
+                    padding: 10px;
+                    font-size: 14px;
+                }
+            }
+        }
+}
