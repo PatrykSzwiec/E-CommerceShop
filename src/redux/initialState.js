@@ -86,6 +86,8 @@ const initialState = {
   blogs: [
     {
       id: 1,
+      author: 'Amy Johnson',
+      category: 'Living Room',
       blogTitle: 'How to Find a Perfect Sofa',
       dateOfPublishing: '15 AUG 2023',
       numberOfComments: '4',
@@ -98,6 +100,8 @@ const initialState = {
     },
     {
       id: 2,
+      author: 'Kate Allen',
+      category: 'Trends',
       blogTitle: 'Trends in home decor',
       dateOfPublishing: '15 JULY 2023',
       numberOfComments: '1',
@@ -110,6 +114,8 @@ const initialState = {
     },
     {
       id: 3,
+      author: 'Amy Johnson',
+      category: 'Bedroom',
       blogTitle: 'Best mattresses for good sleep',
       dateOfPublishing: '15 JUNE 2023',
       numberOfComments: '7',
@@ -122,6 +128,8 @@ const initialState = {
     },
     {
       id: 4,
+      author: 'Paul Harris',
+      category: 'Living Room',
       blogTitle: 'Plants for your living room',
       dateOfPublishing: '15 MAY 2023',
       numberOfComments: '2',
@@ -134,6 +142,8 @@ const initialState = {
     },
     {
       id: 5,
+      author: 'Sara Clark',
+      category: 'Guide',
       blogTitle: 'How to use mirrow to optically enlarge your space',
       dateOfPublishing: '15 APR 2023',
       numberOfComments: '0',
@@ -146,6 +156,8 @@ const initialState = {
     },
     {
       id: 6,
+      author: 'Ben Davis',
+      category: 'Guide',
       blogTitle: 'Best cat furniture for stylish home',
       dateOfPublishing: '15 MAR 2023',
       numberOfComments: '1',
@@ -157,6 +169,10 @@ const initialState = {
       imageName: '6',
     },
   ],
+  blogCategories: ['Guides', 'Lifestyle', 'Trends', 'Living Room', 'Bedroom', 'Others'],
+  blogAuthors: ['Amy Johnson', 'Ben Davis', 'Sara Clark', 'Paul Harris', 'Kate Allen'],
+
+  shopCategories: ['Furniture', 'Sofas', 'Chairs', 'Tables', 'Bedroom', 'Kitchen'],
 };
 
 export default initialState;

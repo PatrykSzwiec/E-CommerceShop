@@ -1,55 +1,18 @@
 .root {
   margin-top: 50px;
     .container {
+      margin: 50px, 10px, 20px, 60px;
         .sidebar {
-            flex: 3;
-            padding: 20px;
+        
+            flex: 4;
+            padding: 50px;
             background-color: #ffffff;
             .widget {
                 margin-bottom: 20px;
                 border-bottom: 1px solid #ccc;
                 padding-bottom: 20px;
             }
-            .widget:last-child {
-            border-bottom: none;
-            padding-bottom: 0;
-            }
-            
-            .widget ul {
-            list-style: none;
-            padding: 0;
-            }
-            
-            .widget ul li {
-            display: flex;
-            align-items: center;
-            }
-            
-            .widget ul li:not(:last-child) {
-            margin-bottom: 5px;
-            padding-bottom: 5px;
-            border-bottom: 1px solid #ccc;
-            }
-            
-            .widget ul li a {
-            text-decoration: none;
-            color: #333;
-            }
-            
-            .widget ul li a:hover {
-            color: #333;
-            text-decoration: underline;
-            }
-        }
+          }
 
     }
 }
-
-  
-  .posts .post:not(:first-child) {
-    margin-top: 30px;
-  }
-  .posts .post:not(:first-child) {
-    margin-top: 30px;
-  }
-  

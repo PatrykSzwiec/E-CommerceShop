@@ -3,8 +3,9 @@
   .container {
     display: flex;
     .layout {
+      flex: 9;
       .posts {
-        flex: 9;
+        flex: 8;
         padding: 20px;
         background-color: #ffffff;
         .post {
@@ -71,6 +72,9 @@
           }
         }
       }
+    }
+    .layoutTwo {
+      flex: 4;
     }
   }
 }
