@@ -2,23 +2,27 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { useSelector } from 'react-redux';
 import { getProductById } from '../../../redux/productsRedux';
+import styles from './QuickViewPopup.module.scss';
 const QuickViewPopup = ({ id, onClose }) => {
+
   const product = useSelector(state => getProductById(state, id));
 
   return (
-    <div>
-      <div>
-        <button className='btn-danger my-2 mx-1' onClick={onClose}>
+    <>
+      {/* Shade */}
+      <div className={styles['overlay']}></div>
+
+      {/* Popup */}
+      <div className={styles['quick-view-popup']}>
+        <div className={styles['close-button']} onClick={onClose}>
           X
-        </button>
-        <h4 className='mx-2'>{product.name}</h4>
-      </div>
-      <div>
-        <div className='row'>
-          <div className='col-md-6'>
-            <img src={product.picture} alt={product.name} className='img-fluid' />
+        </div>
+        <div className={styles['popup-content']}>
+          <div className={styles['current-image']}>
+            <img src={'/' + product.picture} alt={product.name} className="img-fluid" />
           </div>
-          <div className='col-md-6'>
+          <div className={styles['product-data']}>
+            <h4>{product.name}</h4>
             <p>
               <strong>Category:</strong> {product.category}
             </p>
@@ -37,7 +41,7 @@ const QuickViewPopup = ({ id, onClose }) => {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
