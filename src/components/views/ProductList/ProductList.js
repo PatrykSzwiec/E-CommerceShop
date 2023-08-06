@@ -2,7 +2,7 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import styles from './ProductList.module.scss';
 import Brands from '../../features/Brands/Brands';
-import Filters from '../Filters/Filters';
+import FiltersShop from '../FiltersShop/FiltersShop';
 import NewFurniture from '../../features/NewFurniture/NewFurnitureContainer';
 import Baner from '../../common/Baner/Baner';
 
@@ -35,7 +35,7 @@ const ProductList = () => {
               )}
             </div>
             <div className='col-3'>
-              <Filters />
+              <FiltersShop />
             </div>
           </div>
         </div>

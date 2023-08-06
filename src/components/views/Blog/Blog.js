@@ -45,7 +45,9 @@ const Blog = () => {
               </div>
             </div>
           </div>
-          <BlogSidebar />
+          <div className={styles.layoutTwo}>
+            <BlogSidebar />
+          </div>
         </div>
       </div>
     </div>
