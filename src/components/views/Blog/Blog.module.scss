@@ -1,6 +1,55 @@
+@import "../../../styles/settings.scss";
+
 .root{
   margin: 35px;
-  .container {
+.container {
+  display: flex;
+}
+
+.posts {
+  flex: 9;
+  padding: 20px;
+  background-color: $blog-light;
+}
+
+.sidebar {
+  flex: 3;
+  padding: 20px;
+  background-color: $blog-light;
+}
+
+.post {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.postImage {
+  position: relative;
+  width: 100%;
+  max-height: 400px;
+  overflow: hidden;
+}
+
+.postImage img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.postOverlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: $blog-dark;
+  padding: 10px;
+  color: $blog-light;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+  .postInfo {
     display: flex;
     .layout {
       flex: 9;
@@ -77,4 +126,71 @@
       flex: 4;
     }
   }
+
+.postInfo p {
+  margin: 0 10px 0 0;
+
+}
+
+.postButton a {
+  color: $blog-light;
+  text-decoration: none;
+}
+
+.postContent {
+  margin-top: 20px;
+}
+
+.postContent h1 {
+  margin-top: 0;
+}
+
+.postContent p {
+  margin-bottom: 10px;
+}
+
+.widget {
+  margin-bottom: 20px;
+  border-bottom: 1px solid $blog-border;
+  padding-bottom: 20px;
+}
+
+.widget:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.widget ul {
+  list-style: none;
+  padding: 0;
+}
+
+.widget ul li {
+  display: flex;
+  align-items: center;
+}
+
+.widget ul li:not(:last-child) {
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid $blog-border;
+}
+
+.widget ul li a {
+  text-decoration: none;
+  color: $blog-widget;
+}
+
+.widget ul li a:hover {
+  color: $blog-widget;
+  text-decoration: underline;
+}
+
+.posts .post:not(:first-child) {
+  margin-top: 30px;
+}
+.posts .post:not(:first-child) {
+  margin-top: 30px;
+}
+
 }

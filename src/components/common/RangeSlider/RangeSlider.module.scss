@@ -5,14 +5,14 @@
 }
 
 .track {
-  background: $color-light ;
+  background:  $rangeSlider-background;
   height: 6px;
-  border: 1px solid grey;
+  border: 1px solid $rangeSlider-track-border;
   border-radius: 3px;
 }
 
 .activeTrack {
-  background-color: black;
+  background-color: $color-deepblack;
   height: 6px;
   border-radius: 3px;
   position: absolute;
@@ -21,7 +21,7 @@
 }
 
 .inactiveTrack {
-  background-color: $color-light;
+  background-color: $rangeSlider-background;
   height: 6px;
   border-radius: 3px;
   position: absolute;
@@ -33,9 +33,9 @@
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background-color: $color-light;
-  border: 3px solid $color-primary;
-  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
+  background-color: $rangeSlider-background;
+  border: 3px solid $rangeSlider-thumb-border;
+  box-shadow: 0px 2px 6px $rangeSlider-thumb-boxShadow;
 }
 
 .rangeButtonContainer {
@@ -48,7 +48,7 @@
 .rangeValues {
   font-size: 16px;
   font-weight: bold;
-  border: 2px solid $color-grey-3;
+  border: 2px solid $rangeSlider-border-range;
   align-items: center;
   justify-content: center;
   display: flex;
@@ -58,5 +58,5 @@
 
 .filterButton {
   margin-left: 10px;
-  background-color: $color-primary;
+  background-color: $rangeSlider-thumb-border;
 }

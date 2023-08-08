@@ -39,7 +39,7 @@
       transform: translateY(-50%);
       text-decoration: none;
       &:hover {
-        background-color: #d58e32;
+        background-color: $productDate-primary;
       }
     }
 
@@ -50,7 +50,7 @@
       transform: translateY(-50%);
       text-decoration: none;
       &:hover {
-        background-color: #d58e32;
+        background-color: $productDate-primary;
       }
     }
   }
@@ -60,7 +60,7 @@
     .oldPrice {
       text-decoration: line-through;
       margin: 0 10px;
-      color: #6c757d !important;
+      color: $productDate-oldPrice-text !important;
       font-size: 13px;
     }
   }
@@ -68,8 +68,8 @@
     margin-right: 5px;
     
     padding: 5px;
-    background-color: white;
-    border: solid 1px black;
+    background-color: $productDate-light;
+    border: solid 1px $productDate-button-border;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -93,35 +93,35 @@
     }
 
     .Facebook {
-      color: white;
-      background-color: #2462b4;
+      color: $productDate-light;
+      background-color: $colorBlue;
     }
 
     .Google {
-      color: #db4437;
+      color: $colorRed;
       p {
-        color: gray;
+        color: $productDate-oldPrice-text;
       }
     }
 
     .Pinterest {
-      color: #bd081c;
+      color: $colorRed;
       p {
-        color: gray;
+        color: $productDate-oldPrice-text;
       }
     }
 
     .Twitter {
-      color: #1da1f2;
+      color: $colorBlue;
       p {
-        color: gray;
+        color: $productDate-oldPrice-text;
       }
     }
 
     .LinkedIn {
-      color: #0e76a8;
+      color: $colorBlue;
       p {
-        color: gray;
+        color: $productDate-oldPrice-text;
       }
     }
   }
@@ -135,15 +135,15 @@
   }
   .addToCartButton {
     margin-right: 5px;
-    color: white;
-    background-color: #d58e32;
+    color: $productDate-light;
+    background-color: $productDate-primary;
     text-decoration: none;
   }
   .arrowButton {
     margin: 4px;
     text-decoration: none;
     &:hover {
-      background-color: #d58e32;
+      background-color: $productDate-primary;
     }
   }
 }

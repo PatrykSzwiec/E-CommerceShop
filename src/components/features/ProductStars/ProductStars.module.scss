@@ -1,3 +1,5 @@
+@import "../../../styles/settings.scss";
+
 .stars {
   a {
     text-decoration: none;
@@ -5,13 +7,13 @@
 }
 
 .blackStars {
-  color: black;
+  color: $productStar-blackStar;
 }
 
 .goldStars {
-  color: #d58e32;
+  color: $productStar-goldStar;
 }
 
 .hoverStars{
-  color: RED;
+  color: $productStar-redStar;
 }

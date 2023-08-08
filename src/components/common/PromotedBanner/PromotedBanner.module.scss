@@ -13,7 +13,7 @@
 
 	.img {
 		position: relative;
-		background-color: $color-grey-1;
+		background-color: $promoted-dot;
 		width: 100%;
 		height: 501px;
 		text-align: center;
@@ -37,7 +37,7 @@
 			top:50%;
 			left:0;
 			transform: translateY(-50%);
-			background-color: rgba(42, 42, 42, 0.5);
+			background-color: $promoted-title-bg;
 			color: $text-light;
 			text-transform: uppercase;
 			h2 {

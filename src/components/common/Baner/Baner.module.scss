@@ -8,8 +8,8 @@
 
 // Up Section
 .upSection {
-  background-color: $color-dark;
-  color: $color-light;
+  background-color: $baner-backgorund;
+  color: $baner-text-color;
   height: 200px;
   display: flex;
   justify-content: center;
@@ -49,7 +49,7 @@
 
 .procentText {
   letter-spacing: 16px;
-  color: $color-primary;
+  color: $baner-text-procent;
   padding-right: 30px;
 }
 
@@ -66,7 +66,7 @@
 
 
 .positionHome {
-  background-color: $color-grey-3;
+  background-color: $baner-text-color-home;
   display: flex;
   justify-content: flex-start;
   align-items: center;
