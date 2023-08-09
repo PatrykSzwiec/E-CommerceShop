@@ -22,12 +22,12 @@
 .chatBotBtn {
   margin-top: -2px;
   padding: 10px 20px;
-  color: $color-light;
+  color: $chatBot-text;
   font-size: 16px;
   border: none;
   border-radius: 5px;
 
-  background-color: $color-primary;
+  background-color: $chatBot-primary;
   outline: none;
 }
 
@@ -36,12 +36,12 @@
   justify-content: flex-end;
   padding: 5px;
   padding-bottom: 10px;
-  background-color: $color-primary;
+  background-color: $chatBot-primary;
 }
 
 .chat__refreshBtn,
 .chat__closeBtn {
-  color: $color-light;
+  color: $chatBot-text;
   width: 20px;
   height: 20px;
 
@@ -51,9 +51,9 @@
 
 .chat__messages {
   padding: 20px;
-  border-right: 2px solid $color-primary;
-  border-left: 2px solid $color-primary;
-  background-color: $color-light;
+  border-right: 2px solid $chatBot-primary;
+  border-left: 2px solid $chatBot-primary;
+  background-color: $chatBot-text;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -70,18 +70,18 @@
   margin-left: 10px;
   padding: 5px 10px;
 
-  border: 1px solid $color-grey-4;
+  border: 1px solid $chatBot-border;
   border-radius: 10px;
   box-shadow: 8px 8px 11px -8px rgba(66, 68, 90, 1);
 }
 
 .chat__form {
   display: flex;
-  background-color: $color-grey-3;
+  background-color: $chatBot-background;
   width: 100%;
 
   & input {
-    color: $color-light;
+    color: $chatBot-text;
     border: none;
     outline: none;
     background-color: transparent;
@@ -89,8 +89,8 @@
 
   & button {
     border: none;
-    background-color: $color-grey-3;
-    color: $color-light;
+    background-color: $chatBot-background;
+    color: $chatBot-text;
   }
 }
 
@@ -101,18 +101,18 @@
   justify-content: center;
   align-items: center;
 
-  background-color: $color-primary;
+  background-color: $chatBot-primary;
 }
 
 .chat__iconBottom {
-  background-color: $color-primary;
+  background-color: $chatBot-primary;
   height: 40px;
   clip-path: polygon(6% 0, 0% 100%, 0 0);
 }
 
 .chat__icon {
   font-size: 30px;
-  color: $color-light;
+  color: $chatBot-text;
 }
 
 .chatbox {
@@ -135,29 +135,14 @@
   padding: 5px;
 }
 
-.botMessage {
-  background-color: #e1ffc7;
-  text-align: right;
-}
-
-.userMessage {
-  background-color: #eee;
-  text-align: right;
-  color: aqua;
-}
-
 .messageWindow {
   margin-top: -2px;
   padding: 10px 20px;
   color: #000;
   font-size: 16px;
-  border: 1px solid #c7c7c7;
+  border: 1px solid $chatBot-border;
   border-radius: 5px;
-  background-color: white;
+  background-color: $chatBot-background;
   outline: none;
   width: 100%;
-}
-
-.messageWindow::before {
-  text-align: right;
 }

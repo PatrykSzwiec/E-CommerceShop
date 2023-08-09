@@ -1,11 +1,10 @@
 .root{
   margin: 35px;
   .container {
-    display: flex;
+display: flex;
     .layout {
-      flex: 9;
       .posts {
-        flex: 8;
+        flex: 9;
         padding: 20px;
         background-color: #ffffff;
         .post {
@@ -40,7 +39,7 @@
             }
             .postInfo p {
               margin: 0 10px 0 0;
-            
+
             }
             .postButton a {
               color: #fff;
@@ -52,11 +51,11 @@
             .postContent h1 {
               margin-top: 0;
             }
-            
+
             .postContent p {
               margin-bottom: 10px;
             }
-            
+
           }
         }
       }
@@ -72,9 +71,6 @@
           }
         }
       }
-    }
-    .layoutTwo {
-      flex: 4;
     }
   }
 }

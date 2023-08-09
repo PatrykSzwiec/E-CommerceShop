@@ -10,16 +10,16 @@
 .custom_radio {
   width: 20px;
   height: 20px;
-  border: 2px solid $color-deepblack;
+  border: 2px solid $registerPage-deep-dark;
 
   &:focus {
     box-shadow: none;
   }
 
   &:checked[type=radio] {
-    background-color: $color-light;
+    background-color: $registerPage-light;
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='2.5' fill='black'/%3e%3c/svg%3e");
-    border-color: $color-deepblack !important;
+    border-color: $registerPage-deep-dark !important;
   }
 }
 
@@ -32,12 +32,12 @@
 
   &:focus {
     box-shadow: none;
-    border: 2px solid $color-deepblack;
+    border: 2px solid $registerPage-deep-dark;
   }
 
   &:checked {
-    border: 1px solid $color-deepblack;
-    background-color: $color-dark;
+    border: 1px solid $registerPage-deep-dark;
+    background-color: $registerPage-dark;
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba(213,142,50,1)'/%3e%3c/svg%3e") !important;
   }
 }
@@ -50,16 +50,16 @@
 
 // CHECKBOXES AREA
 .rules {
-  color:$color-primary;
+  color:$registerPage-primary;
   text-decoration: none;
   &:hover {
-    color: $color-dark;
+    color: $registerPage-dark;
     text-decoration: none;
   }
 }
 
 input[type='checkbox'] {
-  border: 2px solid $color-deepblack;
+  border: 2px solid $registerPage-deep-dark;
 }
 
 .singleCheckBoxes {
@@ -68,21 +68,21 @@ input[type='checkbox'] {
 
 // BUTTONS
 .button_back {
-  color: $color-primary;
+  color: $registerPage-primary;
   text-decoration: none;
   padding: 20px 0 20px 0;
 
   &:hover {
-    color: $color-dark;
+    color: $registerPage-dark;
   }
 }
 
 .button_register {
   height: 50px;
   text-decoration: none;
-  background-color: $color-primary;
+  background-color: $registerPage-primary;
 
   &:hover {
-    background-color: $color-dark !important;
+    background-color: $registerPage-dark !important;
   }
 }

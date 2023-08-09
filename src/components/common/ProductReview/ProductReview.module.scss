@@ -5,7 +5,7 @@
 
 }
 .tabs {
-  border: 1px solid $color-dark;
+  border: 1px solid $product-review-border-main;
   .tabList {
     display: flex;
   }
@@ -19,13 +19,13 @@
     padding: 10px;
     cursor: pointer;
     transition: background-color 0.2s ease;
-    border-right: 1px solid $color-dark;
-    border-bottom: 1px solid $color-dark;
+    border-right: 1px solid $product-review-border-main;
+    border-bottom: 1px solid $product-review-border-main;
     height: 50px;
   }
 
   .active {
-    color: $color-primary;
+    color: $product-review-active-tab;
     border-bottom: none;
   }
 
@@ -74,8 +74,8 @@ textarea {
 }
 
 .inputButton {
-  background-color: $color-dark;
-  color: $color-light;
+  background-color: $product-review-border-main;
+  color: $text-light;
   font-size: 11px;
   width: 10%;
 }

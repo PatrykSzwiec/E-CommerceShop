@@ -23,13 +23,13 @@
           width: 13px;
           height: 13px;
           border-radius: 50%;
-          background-color: gray;
+          background-color: $comments-dot-background;
           margin-right: 10px;
           cursor: pointer;
         }
 
         .activeDot {
-          background-color: orange;
+          background-color: $comments-dotActive-background;
         }
       }
     }
@@ -97,7 +97,7 @@
     padding-top: 15px;
     height: 20px;
     width: 33px;
-    color: #2a2a2a;
+    color: $comments-h2-text;
   }
 }
 

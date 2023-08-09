@@ -6,7 +6,7 @@
   align-items: center;
 
   padding: 150px 0;
-  background-color: $color-grey-4;
+  background-color: $loginPage-background;
 }
 
 .loginPage__form {
@@ -16,8 +16,8 @@
   width: 500px;
   padding: 50px;
   border-radius: 5px;
-  border-top: 3px solid $color-primary;
-  background-color: $color-light;
+  border-top: 3px solid $loginPage-primary;
+  background-color: $loginPage-light;
 
   & label {
     font-weight: bold;
@@ -28,7 +28,7 @@
   & input {
     margin-bottom: 20px;
     border-radius: 5px;
-    border: 1px solid $color-grey-3;
+    border: 1px solid $loginPage-border;
   }
 
   & p {
@@ -41,8 +41,8 @@
     align-self: center;
     border: none;
     border-radius: 5px;
-    background-color: $color-primary;
-    background: linear-gradient(0deg, rgba(213,142,50,1) 0%, rgba(236,228,56,1) 100%);
+    background-color: $loginPage-primary;
+    background: linear-gradient(0deg, $loader-gradient-a 0%, $loader-gradient-b 100%);
   }
 }
 
