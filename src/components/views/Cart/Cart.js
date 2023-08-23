@@ -26,6 +26,34 @@ const Cart = () => {
     }
   };
 
+  const calculateSubtotal = () => {
+    return cartProducts.reduce(
+      (acc, product) => acc + product.price * product.quantity,
+      0
+    );
+  };
+
+  const calculateTotal = () => {
+    return calculateSubtotal() + 20;
+  };
+
+  const consolidateCartProducts = cartProducts => {
+    const consolidatedProducts = cartProducts.reduce((acc, product) => {
+      const existingProduct = acc.find(item => item.id === product.id);
+      if (existingProduct) {
+        existingProduct.quantity += product.quantity;
+      } else {
+        acc.push({ ...product });
+      }
+      return acc;
+    }, []);
+
+    return consolidatedProducts;
+  };
+
+  const consolidatedCartProducts = consolidateCartProducts(cartProducts);
+
+
   return (
     <div className={styles.root}>
       <div className={styles.header}>
@@ -62,9 +90,9 @@ const Cart = () => {
             </tr>
           </thead>
           <tbody>
-            {cartProducts.map(product => (
+            {consolidatedCartProducts.map(product => (
               <CartProduct
-                key={Math.random()}
+                key={product.id}
                 actionDelete={deleteCartProductHandler}
                 {...product}
               />
@@ -108,11 +136,11 @@ const Cart = () => {
               <tbody>
                 <tr>
                   <th>Subtotal</th>
-                  <td>$30.00</td>
+                  <td>${calculateSubtotal().toFixed(2)}</td>
                 </tr>
                 <tr>
                   <th>Total</th>
-                  <th className={styles.total}>$30.00</th>
+                  <th className={styles.total}>${calculateTotal().toFixed(2)}</th>
                 </tr>
                 <tr>
                   <td className={`text-center align-middle"`} colSpan={2}>
